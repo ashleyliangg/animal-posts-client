@@ -1,0 +1,245 @@
+body, html {
+    font-family: "Roboto", sans-serif;
+    // background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,pink 100%);
+    height: 100%;
+		margin: 0;
+		padding: 0;
+  }
+
+  :root {
+    text-size-adjust: 100%;
+  }
+  
+// .active, .active {
+// 	color: pink;
+// }
+
+body {
+	background-image: url("img/nature.jpg");
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 3rem;
+}
+
+.tags {
+	color: gray;
+	font-family: 'Cutive Mono', monospace;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgb(182, 145, 108);
+	height: 70px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+
+ul {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: space-between;
+	padding: 0 1rem;
+
+	li {
+		font-size: 2rem;
+		text-decoration: none;
+
+		.navlink {
+			color: black;
+			text-decoration: none;
+
+		}
+	}
+}
+
+.navlink {
+	text-decoration: none;
+}
+
+.create-button {
+	font-family: 'Bubblegum Sans', cursive;
+
+	.add-icon {
+		transition: transform 0.5s ease;
+	}
+}
+
+.create-button:hover, .create-button.active {
+	.add-icon {
+		transform: rotate(45deg);
+	}
+}
+
+.main-content {
+	margin-top: 70px; // to put underneath nav bar
+	padding: 1.5rem 3rem;
+}
+
+.posts-container {
+	display: flex;
+	// flex-direction: column;
+	flex-wrap: wrap;
+	// align-items: center;
+	// padding: 1.5rem 3rem;
+	// text-align: center;
+	// height: 80vh;
+	// align-items: flex-start;
+	div {
+		align-items: center;
+	}
+}
+
+.post-container {
+	width: 17rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	// background-color: rgb(220, 244, 203);
+	background-image: linear-gradient(to right, rgb(158, 194, 130), rgb(252, 252, 252), rgb(158, 194, 130));
+	margin: 10px;
+	border-radius: 5px;
+	padding: 1rem;
+}
+
+.cover-img {
+	padding-top: 0px;
+	margin: 0px;
+	p img {
+		width: 17rem;
+	}
+}
+
+.posts-title {
+	font-size: 1.5rem;
+	color: black;
+	font-family: 'Comme', sans-serif;
+	text-align: center;
+}
+
+.posts-tag {
+	font-size: 0.8rem;
+	color: rgb(114, 113, 113);
+	margin: 5px 0;
+	font-family: 'Cutive Mono', monospace;
+	background-color: rgb(227, 227, 227);
+	border-radius: 5px;
+	margin: 0 5px;
+	padding: 5px;
+}
+
+.posts-tags {
+	display: flex;
+}
+
+.post-cover {
+	p img {
+		width: 25rem;
+	}
+}
+
+.icon-button {
+	font-size: 1.5rem;
+}
+
+.post-item {
+	background-color: rgb(220, 244, 203);
+	border-radius: 10px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.post-content {
+	align-self: flex-start;
+	padding: 0 2rem;
+	font-family: 'Comme', sans-serif;
+}
+
+.top-icons {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.5rem;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+i {
+	cursor: pointer;
+}
+
+.new-post-form {
+	background-color: rgb(220, 244, 203);
+	border-radius: 10px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.trash {
+	align-self: flex-start;
+}
+
+.form-input {
+	width: 50vw;
+	height: 1.3rem;
+	border-radius: 5px;
+	border-color: #a6c1ee;
+	font-family: 'Comme', sans-serif;
+}
+
+.content-input {
+	width: 50vw;
+	border-width: 2px;
+	border-radius: 5px;
+	border-color: #a6c1ee;
+	font-family: 'Comme', sans-serif;
+}
+
+// code from https://codepen.io/mali89/pen/yoovjR
+.big-button {
+	flex: 1 1 auto;
+  margin: 10px;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  letter-spacing:2px;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 20px #eee;
+  border-radius: 50px;
+  cursor:pointer;
+  box-shadow:0 16px 38px -12px rgba(125, 125, 125, 0.56), 0 4px 25px 0px rgba(125, 125, 125, 0.2), 0 8px 10px -5px rgba(125, 125, 125, 0.2);
+	font-weight:500;
+}
+.big-button:hover {
+  background-position: top center; /* change the direction of the change here */
+  box-shadow:none;
+  letter-spacing:1px;
+}
+
+.new-button {
+	background-image: linear-gradient(to right, #83cf70 0%, #ebf563 51%, #83cf70 100%);
+}
+
+.upd-button {
+	background-image: linear-gradient(to right, #fa9484 0%, #e49c5d 51%, #fa9484 100%);
+}
+
+.input-names {
+	font-size: 1.5rem;
+	font-family: 'Bubblegum Sans', cursive;
+}
